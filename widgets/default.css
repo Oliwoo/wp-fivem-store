@@ -1,0 +1,349 @@
+:root{
+    --fivem-orange: #FF7002;
+}
+.fivem-login-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:10px 0px;
+}
+.fivem-login-btn a{
+    display: flex;
+    padding:20px;
+    background-color: var(--fivem-orange);
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color:white;
+    text-transform: uppercase;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    transition: 0.25s;
+}
+.fivem-login-btn a:hover{
+    color: white;
+    background-color: var(--fivem-orange);
+}
+.fivem-login-btn a img{
+    height: 30px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+.fivem-shop-metabox{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px 0px;
+}
+.fivem-shop-metabox-field{
+    padding: 7.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+.fivem-shop-metabox-field-info{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 30%;
+    flex: 0 1 30%;
+    padding-right: 7.5px;
+    flex-direction: column;
+}
+.fivem-shop-metabox-field-info-title{
+    font-weight: 500;
+    font-size: 1.077em;
+    line-height: 1.077em;
+    margin: 0 0 10px 0;
+}
+.fivem-shop-metabox-field-info-description{
+    font-size: 0.9em;
+    color: #96989a;
+    margin: 10px 0;
+}
+.fivem-shop-metabox-field-content{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 70%;
+    flex: 0 1 70%;
+}
+.fivem-shop-metabox-field-container{
+    margin: 10px 0 20px 0;
+}
+.fivem-shop-metabox-field-hidden{
+    display: none;
+}
+.woocommerce-OrderUpdates.commentlist.notes{
+    counter-reset: ol-counter;
+    position: relative;
+}
+.woocommerce-OrderUpdate.comment.note{
+    counter-increment: ol-counter;
+}
+li.woocommerce-OrderUpdate.comment.note:before{
+    content: counter(ol-counter);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 100%;
+    font-size: 14px;
+    border: 1px solid var(--ast-border-color);
+    background: #fbfbfb;
+    font-weight: 700;
+    position: absolute;
+    left: -10px;
+    transform: translateX(-100%);
+    box-shadow: 0px 0px 0px 8px white;
+    z-index: 1;
+}
+li .woocommerce-OrderUpdate-inner.comment_container{
+    position: relative;
+}
+li .woocommerce-OrderUpdate-inner.comment_container:after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: var(--ast-border-color);
+    height: 100%;
+    top: 0px;
+    left: -25px;
+}
+li.woocommerce-OrderUpdate.comment.note:last-child .woocommerce-OrderUpdate-inner.comment_container::after{
+    display: none;
+}
+.woocommerce-OrderUpdate.comment.note::marker{
+    content: '';
+}
+.woocommerce_order_items .fivem_shop_col{
+    position: relative;
+}
+.woocommerce_order_items .fivem_shop_col .fivem_row{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.woocommerce_order_items .fivem_shop_col .fivem_row .fivem_box{
+    position: relative;
+}
+.woocommerce_order_items .fivem_shop_col .fivem_row .fivem_fix_error{
+    margin-left: 10px;
+    padding:7px 15px;
+    border-radius: 5px;
+    background-color: #FF7002;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+    transition: 0.25;
+}
+.woocommerce_order_items .fivem_shop_col .fivem_row .fivem_fix_error:hover{
+    filter: brightness(0.95);
+}
+.woocommerce_order_items .fivem_shop_col span{
+    width: 100%;
+}
+.woocommerce_order_items .fivem_shop_col .icon-help{
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: max-content;
+    background-color: white;
+    color: var(--ast-border-color);
+    padding: 5px 10px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    transition: 0.25s;
+    transition-delay: 0s;
+}
+.woocommerce_order_items .fivem_shop_col .fivem_row .fivem_box .icon-help{
+    bottom:-45px;
+}
+.woocommerce_order_items .fivem_shop_col:hover .icon-help{
+    opacity: 1;
+    transition-delay: 2s;
+}
+.woocommerce_order_items .fivem_shop_col .icon-help:after{
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-left: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+}
+.fivem_shop_error{
+    color:#da2d23;
+}
+.fivem_shop_success{
+    color:#29c63f;
+}
+.toplevel_page_fivem-shop .wp-menu-image img{
+    height: 20px;
+    padding: 6px 0 0!important;
+}
+
+/* -- ADMIN PAGE -- */
+.fivem_admin_page{
+    margin: 20px 0px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.fivem_admin_page .fivem_news{
+    width:100%;
+    position: relative;
+    overflow: hidden;
+}
+.fivem_admin_page .fivem_news img{
+    width:100%;
+    height: 100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    filter: brightness(0.9);
+    object-fit: cover;
+}
+.fivem_admin_page .fivem_news .info{
+    position: relative;
+    z-index: 1;
+    color:white;
+    padding:40px;
+    box-sizing: border-box;
+}
+.fivem_admin_page .fivem_news .info h1{
+    color:white;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.fivem_admin_page .fivem_news .info p{
+    color:white;
+    font-size: 20px;
+    line-height: 1.4;
+    margin:0px;
+    margin-bottom: 20px;
+}
+.fivem_admin_page .fivem_news .info a{
+    display: block;
+    padding:15px 25px;
+    background: white;
+    color:var(--fivem-orange);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    width: max-content;
+}
+.fivem_admin_page .fivem_plugin_guide{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding:60px 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.fivem_admin_page .fivem_plugin_guide .col{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding:0px 20px;
+    box-sizing: border-box;
+}
+.fivem_admin_page .fivem_plugin_guide .col img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    object-fit: contain;
+    background: var(--fivem-orange);
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.fivem_admin_page .fivem_plugin_guide .col .info{
+    display: flex;
+    flex-direction: column;
+}
+.fivem_admin_page .fivem_plugin_guide .col .info h1{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.fivem_admin_page .fivem_plugin_guide .col .info p{
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0.5em 0;
+}
+.fivem_admin_page .fivem_option{
+    background: white;
+    padding:20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.fivem_admin_page .fivem_option h2{
+    margin:0px;
+}
+.fivem_admin_page .fivem_option p{
+    margin:5px 0px;
+}
+.fivem_admin_page .fivem_option input[type=text]{
+    width: 100%;
+}
+.fivem_admin_page .fivem_option .checklist{
+    display: flex;
+    flex-direction: column;
+}
+.fivem_admin_page .fivem_option .checklist .checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fivem_admin_page .fivem_option .checklist .checkbox input{
+    margin: auto 0px;
+    margin-right: 10px;
+}
+.fivem_admin_page .fivem_option .checklist .checkbox label{
+    line-height: 20px;
+}
+
+.fivem_admin_page .fivem_settings_save{
+    margin-top: 40px;
+    background: var(--fivem-orange);
+    border-radius: 0px;
+    border:0px;
+    padding: 12px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: none!important;
+}
+.fivem_admin_page .fivem_settings_save:hover,
+.fivem_admin_page .fivem_settings_save:focus
+.fivem_admin_page .fivem_settings_save:active{
+    filter: brightness(0.95);
+    background: var(--fivem-orange);
+    border:none;
+    transition: 0.25s;
+}
+.toplevel_page_fivem-shop.current{
+    background-color: var(--fivem-orange)!important;
+}
+a.toplevel_page_fivem-shop:hover{
+    color:var(--fivem-orange)!important;
+}

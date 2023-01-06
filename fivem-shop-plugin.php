@@ -3,7 +3,7 @@
 Plugin Name:  Fivem shop integration
 Plugin URI:   https://github.com/Oliwoo/wp-fivem-store
 Description:  A plugin to interface Woocommerce with Fivem servers 
-Version:      1.0
+Version:      1.0.0
 Author:       Oliwoo
 Author URI:   https://www.damianocaccamo.altervista.com
 */
@@ -13,12 +13,6 @@ include "discord_api.php";
 
 // AutoUpdate
 include_once 'autoUpdater.php';
-
-$updater = new PDUpdater(__FILE__);
-$updater->set_username('Oliwoo');
-$updater->set_repository('wp-fivem-store');
-$updater->authorize(get_option('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'));
-$updater->initialize();
 
 /* -- STYLE MANAGER -- */
 function fivem_service_init_style(){

@@ -1,0 +1,13 @@
+{
+    "name": "Oliwoo/wp-fivem-store",
+    "description": "AutoUpdater",
+    "authors": [],
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/Oliwoo/wp-fivem-store",
+    "readme": "https://github.com/Oliwoo/wp-fivem-store/blob/master/README.md",
+    "support": {
+      "issues": "https://github.com/Oliwoo/wp-fivem-store/issues"
+    },
+    "prefer-stable": true
+  }
